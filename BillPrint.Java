@@ -73,6 +73,50 @@ class BillPrint{
 	double Discount = totalAmount * 0.10;
 	double finalPrice = totalAmount - Discount;
 
-    
+        String divider    = "+----------------------------------------------------------------------------------------------+";
+        String divider2   = "+------------------------------+--------------+---------------+--------------------------------+";
+        String divider3   = "+---------------------------------------------+---------------+--------------------------------+";
+        String partialDiv = "|                                             +---------------+--------------------------------+";
+
+		System.out.println(divider);
+		System.out.println("|                              _   __  __          _____ _______                               |");
+		System.out.println("|                             (_) |  \\/  |   /\\   |  __ \\__   __|                              |");
+		System.out.println("|                              _  | \\  / |  /  \\  | |__) | | |                                 |");
+		System.out.println("|                             | | | |\\/| | / /\\ \\ |  _  /  | |                                 |");
+		System.out.println("|                             | | | |  | |/ ____ \\| | \\ \\  | |                                 |");
+		System.out.println("|                             |_| |_|  |_/_/    \\_\\_|  \\_\\ |_|                                 |");
+		System.out.println("|                                  225,Galle Road,Panadura.                                    |");
+		System.out.println("|                                                                                              |");
+		System.out.println(divider);
+
+		System.out.printf("|                                     # Tell  : %-47s|\n",number);
+		System.out.printf("|                                     # Name  : %-47s|\n",name);
+		System.out.println(divider2);
+
+		System.out.printf("| %-28s | %12s | %13s | %30s |\n", "", "Qty", "Unit price", "Price");
+		System.out.println(divider2);
+
+		String itemRowFormt = "| # %-26s | %12d | %13.1f | %30.1f |\n";
+
+		System.out.printf(itemRowFormt,"Basmathi",A,a,totalBasmathi);
+		System.out.printf(itemRowFormt,"Dhal",B,b,totalDhal);
+		System.out.printf(itemRowFormt,"Suger",C,c,totalSuger);
+		System.out.printf(itemRowFormt,"Higland",D,d,totalHigland);
+		System.out.printf(itemRowFormt,"Yoghurt",E,e,totalYoghurt);
+		System.out.printf(itemRowFormt,"Flour",F,f,totalFlour);
+		System.out.printf(itemRowFormt,"Soap",I,i,totalSoap);
+		System.out.println(divider2);
+
+		String totalRowFormat ="|                                             | %-13s | %31.1f|\n";
+		System.out.printf(totalRowFormat,"Total",totalAmount);
+		System.out.println(partialDiv);
+		System.out.printf(totalRowFormat,"discount(10%)",Discount);
+		System.out.println(partialDiv);
+		System.out.printf(totalRowFormat,"Price",finalPrice);
+		System.out.println(divider3);
+		System.out.print("");
+		System.out.print("");
+
+
     }
 }
