@@ -125,6 +125,16 @@ class BillPrint{
 
 		System.out.println();
 
+        String divider4 = "+-------------------+--------------+";
+		System.out.println(divider4);
+		System.out.printf("| %-17s | %12.1f |\n", "Net Amount", netAmount);
+		System.out.println(divider4);
+		System.out.printf("| %-17s | %12.1f |\n", "Cash", cash);
+		System.out.println(divider4);
+		System.out.printf("| %-17s | %12.0f |\n", "Change", change);
+		System.out.println(divider4);
+
         
+
     }
 }
