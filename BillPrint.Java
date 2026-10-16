@@ -134,7 +134,32 @@ class BillPrint{
 		System.out.printf("| %-17s | %12.0f |\n", "Change", change);
 		System.out.println(divider4);
 
-        
+        System.out.print("Enter Rs.5000 notes: ");
+		int n5000 = input.nextInt();
+		System.out.print("Enter Rs.2000 notes: ");
+		int n2000 = input.nextInt();
+		System.out.print("Enter Rs.1000 notes: ");
+		int n1000 = input.nextInt();
+		System.out.print("Enter Rs.500 notes: ");
+		int n500 = input.nextInt();
+		System.out.print("Enter Rs.100 notes: ");
+		int n100 = input.nextInt();
+		System.out.print("Enter Rs.50 notes: ");
+		int n50 = input.nextInt();
+		System.out.print("Enter Rs.20 notes: ");
+		int n20 = input.nextInt();
+		System.out.print("Enter Rs.10 coins: ");
+		int c10 = input.nextInt();
+		System.out.print("Enter Rs.5 coins: ");
+		int c5 = input.nextInt();
+		System.out.print("Enter Rs.2 coins: ");
+		int c2 = input.nextInt();
+		System.out.print("Enter Rs.1 coins: ");
+		int c1 = input.nextInt();
+
+		int totalNotes = n5000 + n2000 + n1000 + n500 + n100 + n50 + n20;
+		int totalCoins = c10 + c5 + c2 + c1;
+
 
     }
 }
