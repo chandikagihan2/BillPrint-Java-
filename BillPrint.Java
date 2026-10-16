@@ -9,5 +9,18 @@ class BillPrint{
 		System.out.println("    \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|  \\__\\___/  |_|_|  |_|\\__,_|_|   \\__|");
 		System.out.println("==============================================================================================");
 
+        Scanner input = new Scanner(System.in);
+	
+	System.out.print("Enter customer Number -");
+	int number=input.nextInt();
+	input.nextLine();
+
+	System.out.println("");
+
+
+	System.out.print("Enter customer Name -");
+	String name=input.nextLine();
+
+	System.out.println("");
     }
 }
