@@ -165,5 +165,43 @@ class BillPrint{
 		String newrowFormat = "| %-17s | %12s |\n";
 		System.out.printf("| %-17s | %12s |\n", "  Value", "  No");
 		System.out.println(divider5);
+
+        System.out.printf(newrowFormat, "Rs.5000", n5000);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.2000", n2000);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.1000", n1000);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.500", n500);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.100", n100);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.50", n50);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.20", n20);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.10", c10);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.5", c5);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.2", c2);
+		System.out.println(divider5);
+
+		System.out.printf(newrowFormat, "Rs.1", c1);
+		System.out.println(divider5);
+		System.out.printf(newrowFormat, "No of Notes", totalNotes);
+		System.out.println(divider5);
+		System.out.printf(newrowFormat, "No of Coins", totalCoins);
+		System.out.println(divider5);
+
     }
 }
