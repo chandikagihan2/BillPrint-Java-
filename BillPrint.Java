@@ -160,6 +160,10 @@ class BillPrint{
 		int totalNotes = n5000 + n2000 + n1000 + n500 + n100 + n50 + n20;
 		int totalCoins = c10 + c5 + c2 + c1;
 
-
+        String divider5 = "+-------------------+--------------+";
+		System.out.println(divider5);
+		String newrowFormat = "| %-17s | %12s |\n";
+		System.out.printf("| %-17s | %12s |\n", "  Value", "  No");
+		System.out.println(divider5);
     }
 }
