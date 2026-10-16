@@ -117,6 +117,14 @@ class BillPrint{
 		System.out.print("");
 		System.out.print("");
 
+        System.out.print("Enter Net amount : ");
+		double netAmount = input.nextDouble();	
+		System.out.print("Enter Cash       : ");
+                double cash = input.nextDouble();
+		double change = cash - netAmount;
 
+		System.out.println();
+
+        
     }
 }
