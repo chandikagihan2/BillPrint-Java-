@@ -203,5 +203,10 @@ class BillPrint{
 		System.out.printf(newrowFormat, "No of Coins", totalCoins);
 		System.out.println(divider5);
 
+        System.out.println();
+		System.out.println("------------------------------------------------");
+		System.out.println("         THANK YOU FOR SHOPPING WITH US        ");
+		System.out.println("------------------------------------------------");
+
     }
 }
